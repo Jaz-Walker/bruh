@@ -1,15 +1,16 @@
 #more strings and tests
-
+# below we are setting the words to the words we want
 x = "There are %d types of people." % 10
 binary = "binary"
 doNot = "don't"
+# below us we are putting our words into code (%s) is used for words
 y = "Those who know %s and those who %s " % (binary, doNot)
-
+# below we made it to where we can just type x and the word we want will type out
 print(x)
 print(y)
 
 print("I said: %r.:" % x)
-print("I also said: 'xs', " y)
+print("I also said: 'xs', " % y)
 
 hilarious = true
 jokeEvaluation = "Isn't that joke so funny?!?! %r"
@@ -41,4 +42,61 @@ print(end1+end2+end3+end4+end5+end6)
 print(end7+end8+end9+end10+end11+end12)
 print("yes")
 
- #mines broken
+ # why do I  use %r instead of %s in the above example?
+
+formatter = "%r %r %r %r"
+print(formatter % (1, 2, 3, 4))
+print(formatter % True, False, False, True)
+print(formatter % (formatter, formatter, formatter, formatter))
+
+# why does %r sometimes give me single quotes around things?
+
+days = "Mon Tue Wed Thu Fri Sat Sun"
+months = "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
+
+print("Here are the days: ", days)
+print("Here are the months: ", months)
+
+print("""
+There's something going on here. 
+With the three double-quotes.
+We'll be able to type as much as we like.
+Even 4 lines if we want, or 5, or 6
+""")
+
+print("Here are the months: %r" % months)
+print("Here are the months: %s" % months)
+
+# escape sequences redux
+
+tabbyCat = "\tI'm tabbed in."
+persianCat = "I'm spit\non a line."
+backslashCat = "I'm \\ a \\ cat."
+topCat = """ I'll do a list
+\t* cat food
+\t* Fishies
+\t Catnip\n\t*Grass
+"""
+
+print(tabbyCat)
+print(persianCat)
+print(backslashCat)
+print(topCat)
+
+
+# Escape Seq            What it does?
+# \\
+# \'
+# \"
+# \a
+# \b
+# \f
+# \n
+# \N{Name}
+# \r
+# \t
+# \uxxxx
+# \uxxxxxxx
+# \v
+# \ooo
+# \xhh
