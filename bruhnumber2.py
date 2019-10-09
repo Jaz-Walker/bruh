@@ -10,9 +10,8 @@ print(x)
 print(y)
 
 print("I said: %r.:" % x)
-print("I also said: 'xs', " % y)
 
-hilarious = true
+hilarious = False
 jokeEvaluation = "Isn't that joke so funny?!?! %r"
 print(jokeEvaluation % hilarious)
 
@@ -22,7 +21,7 @@ print(w+e)
 
 # more printing fun
 print("Mary had a little lamb")
-print("It's fleece was white as %" % 'snow')
+print("It's fleece was white as %s" % 'snow')
 print("And everywhere that mary went")
 print(", * 10")
 end1 = "C"
@@ -46,7 +45,7 @@ print("yes")
 
 formatter = "%r %r %r %r"
 print(formatter % (1, 2, 3, 4))
-print(formatter % True, False, False, True)
+print(formatter % (True, False, False, True))
 print(formatter % (formatter, formatter, formatter, formatter))
 
 # why does %r sometimes give me single quotes around things?
@@ -73,9 +72,10 @@ tabbyCat = "\tI'm tabbed in."
 persianCat = "I'm spit\non a line."
 backslashCat = "I'm \\ a \\ cat."
 topCat = """ I'll do a list
-\t* cat food
-\t* Fishies
-\t Catnip\n\t*Grass
+\t cat food
+\t Fishies
+\t Catnip
+\tGrass
 """
 
 print(tabbyCat)
@@ -85,7 +85,7 @@ print(topCat)
 
 
 # Escape Seq            What it does?
-# \\
+# \\                    a
 # \'
 # \"
 # \a
@@ -100,3 +100,17 @@ print(topCat)
 # \v
 # \ooo
 # \xhh
+
+# what does the following code do:
+#  while True:
+#       for i in ["/", "-", "|", "\\", "|"]:
+#           print("%s\r" % i, end='')
+
+# can you use ''' instead of """
+
+
+age = input("How old are you?")
+height = input("How tall are you?")
+
+
+print("So, you are %r old and %r tall." % (age,height))
