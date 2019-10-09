@@ -114,3 +114,11 @@ height = input("How tall are you?")
 
 
 print("So, you are %r old and %r tall." % (age,height))
+
+# ask 4 more questions and handle those responses
+
+length = input("5'8")
+width = input("2")
+
+
+print("")
