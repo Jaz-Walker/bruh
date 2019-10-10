@@ -117,8 +117,14 @@ print("So, you are %r old and %r tall." % (age,height))
 
 # ask 4 more questions and handle those responses
 
-length = input("5'8")
-width = input("2")
+length = input("How long is the box?")
+width = input("How wide is the box?")
 
+print("So the box is %r long and %r wide." % (length, width))
 
-print("")
+#2
+
+ammo = input("What ammo does the gun fire?")
+ammoAmount = input("How much ammo does the gun have?")
+
+print("So the gun fires %r and has %r amount of ammo." % (ammo, ammoAmount))
