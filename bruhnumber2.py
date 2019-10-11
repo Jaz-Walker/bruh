@@ -128,3 +128,25 @@ ammo = input("What ammo does the gun fire?")
 ammoAmount = input("How much ammo does the gun have?")
 
 print("So the gun fires %r and has %r amount of ammo." % (ammo, ammoAmount))
+
+
+#StoryTime
+
+name = input("What is your name?")
+feeling = input("How did you like going to Barnes and Noble?")
+goAgain = input("Do you think that you would go again?")
+liked = input("What did you enjoy about going?")
+wantDo = input("Is there anything you wanted to do but didn't?")
+favBook = input("What was your favorite book out of the whole store?")
+friends = input("Did you see any friends while you were there?")
+
+
+print("Jim is a 3rd grader who took a trip to Barnes and Noble. After his trip I asked him about what he saw and what he liked.")
+
+print("Thanks Jim, I'm going to be asking some questions about your venture to the local Barnes and Noble." % (name))
+print("That's good to know.")
+print("I'm glad that you liked that.")
+print("Oh, well that's too bad but maybe you'll be able to do it next time you go.")
+print("Hey, that was my favorite book as a kid, nice choice.")
+print("Well maybe you'll see more next time.")
+print("")
